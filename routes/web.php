@@ -17,3 +17,13 @@ Route::get('/', function () {
     $title = "Hello world!";
     return view('home', compact('title'));
 });
+
+
+Route::get('/author', function () {
+    return view('author');
+})->name('author');
+
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contacts');
